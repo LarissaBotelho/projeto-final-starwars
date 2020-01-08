@@ -1,0 +1,29 @@
+<app-menu-header></app-menu-header>
+<div class="container">
+  <div class="bloco">
+    <div class="row">
+      <span class="center grey title-details">{{ planet.name }}</span>
+    </div>
+  </div>
+  <div class="bloco">
+    <div class="row">
+      <div class="column">
+        <div class="details">
+          <span class="description"><strong>Nome:</strong> {{ planet.name }}</span>
+          <span class="description"><strong>População:</strong> {{ planet.population }}</span>
+          <span class="description"><strong>Clima:</strong> {{ planet.climate }}</span>
+          <span class="description"><strong>Terreno:</strong> {{ planet.terrain }}</span>
+          <span class="description"><strong>Aparições:</strong> {{ planet.films?.length }} {{planet.films?.length === 1 ? 'film' : 'films'}}</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="details">
+          <span class="description">Residentes</span>
+           <span class="description" *ngFor="let peoplePlanet of peoples">
+            <a [routerLink]="['/people/id/', removeUrlPeople(peoplePlanet.url)]">{{ peoplePlanet.name }}</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

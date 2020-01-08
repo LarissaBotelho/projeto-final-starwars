@@ -1,0 +1,93 @@
+<app-menu-header></app-menu-header>
+
+<div class="container">
+  <div class="blocoJogo">
+    <div class="section--align-center">
+      <div class="name" >
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Escolha seu planeta:</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Escolha...</option>
+            <option value="1">Ahch-To</option>
+            <option value="2">Ando</option>
+            <option value="3">Alderaan</option>
+            <option value="4">Akiva</option>
+            <option value="5">Asmeru</option>
+            <option value="6">Bespin</option>
+            <option value="7">Carida</option>
+            <option value="8">Corellia</option>
+            <option value="9">Coruscant</option>
+            <option value="10">Dagobah</option>
+            <option value="11">Dantooine</option>
+            <option value="12">Dathomir</option>
+            <option value="13">Dorlo</option>
+            <option value="14">Endor</option>
+            <option value="15">Gentes</option>
+            <option value="16">Geonosis</option>
+            <option value="17">Hoth</option>
+            <option value="18">Helska I</option>
+            <option value="19">Helska II</option>
+            <option value="20">Helska III</option>
+            <option value="21">Helska IV</option>
+            <option value="22">Helska V</option>
+            <option value="23">Helska VI</option>
+            <option value="24">Helska VII</option>
+            <option value="25">Jelucan</option>
+            <option value="26">Kamino</option>
+            <option value="27">Kashyyyk</option>
+            <option value="28">Kessel</option>
+            <option value="29">Klatooine</option>
+            <option value="30">Korriban</option>
+            <option value="31">Krant</option>
+            <option value="32">Kurat</option>
+            <option value="33">Malachor</option>
+            <option value="34">Mirial</option>
+            <option value="35">Mustafar</option>
+            <option value="36">Mygeeto</option>
+            <option value="37">Naboo</option>
+            <option value="38">Neimoidia</option>
+            <option value="39">Nova Plympto</option>
+            <option value="40">Orto Plutonia</option>
+            <option value="41">Plexis</option>
+            <option value="42">Reyta</option>
+            <option value="43">Rodia</option>
+            <option value="44">Ruusan</option>
+            <option value="45">Ryloth</option>
+            <option value="46">Scarif</option>
+            <option value="47">Sembla</option>
+            <option value="48">Serenno</option>
+            <option value="49">Shili</option>
+            <option value="50">Socorro</option>
+            <option value="51">Tatooine</option>
+            <option value="52">Utapau</option>
+            <option value="53">Yavin</option>
+            <option value="54">Zaloriis</option>
+            <option value="55">Zeitooine</option>
+            <option value="56">Zygerria</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="category">
+        <span class="category__paragraph">
+          <div class="characteristics">Clima:</div>
+          <input type="text" class="form-control" id="inputJogo" placeholder="Informe o clima">
+        </span>
+        <span class="category__paragraph">
+          <div class="characteristics">Terreno:</div>
+          <input type="text" class="form-control" id="inputJogo" placeholder="Informe o terreno">
+        </span>
+        <span class="category__paragraph">
+          <div class="characteristics">População:</div>
+          <input type="text" class="form-control" id="inputJogo" placeholder="Informe população">
+        </span>
+        <span class="category__paragraph">
+          <div class="characteristics">Aparições:</div>
+          <input type="text" class="form-control" id="inputJogo" placeholder="Informe quantos filmes">
+        </span>
+        <button class="buttonSubmit" [routerLink]="['/starwars/categories']">Enviar</button>
+      </div>
+      <button class="sw-button" >Voltar</button>
+    </div>
+  </div>
+</div>

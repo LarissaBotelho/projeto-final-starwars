@@ -1,0 +1,349 @@
+.logo-star{
+  margin:50px 0 0;
+  width:250px;
+}
+
+.spinner {
+  margin: 20% auto 0;
+  width: 150px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+body{
+  background-image:url('assets/img/sprite-space.png');
+  background-repeat: repeat;
+}
+a {
+  color: #ffe81f;
+  transition:all 0.3s linear;
+}
+a:hover{
+  transition:all 0.3s linear;
+}
+.menu{
+  max-width:620px;
+  margin: 15px auto;
+
+}
+
+.menu ul{
+  text-align: center;
+}
+
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  font-size: 25px;
+  padding:5px 10px;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+
+}
+.menu ul li a:hover{
+  color:#fafafa;
+  text-decoration:underline;
+}
+.bloco{
+  /* position: fixed; */
+  height: auto;
+  margin:10px 0;
+  padding:15px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blocoJogo{
+  /* position: fixed; */
+  height: 600px;
+  margin:10px 0;
+  padding:15px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.person{
+  display: inline-block;
+  margin: 0 18px 50px;
+  max-width: 150px;
+}
+.circle{
+  border-radius: 60px;
+  padding: 30px;
+  max-width: 110px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.center{
+  width: 100%;
+  text-align: center;
+}
+.large{
+  font-size: 48px;
+}
+.white{
+  color:#fff;
+}
+.grey{
+  color: #bcbcbc;
+}
+.black{
+  color: #000;
+}
+.yellow{
+  color:#ffe81f;
+}
+.btn{
+  margin: 0 auto;
+  display: block;
+  color: #000;
+  text-align: center;
+  border:none;
+}
+.btn-yellow{
+  background-color: #ffe81f;
+}
+.btn-grey{
+  background-color: #bcbcbc;
+}
+.people-name{
+  display: block;
+  text-align: center;
+}
+.divider{
+  margin-bottom: 15px;
+  display: block;
+  clear: both;
+}
+.search{
+  max-width: 65%;
+}
+.go{
+    border: none;
+    background-color: #ffe81f;
+    color: #000000;
+}
+.title-details{
+  font-weight: 500;
+  font-size: 22px;
+}
+.details{
+  color:#bcbcbc;
+}
+.description{
+  width: 100%;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.section--align-center {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.category {
+  border: 1px solid yellow;
+  background-color: black;
+  display: inline-block;
+  padding: 1.25rem;
+  width: 50rem;
+
+  @media screen and (max-width: break-extra-small) {
+    width: 14.375rem;
+  }
+}
+
+.category__paragraph {
+  display: flex;
+  text-align: left;
+  margin-bottom: 0.4375rem;
+  text-transform: capitalize;
+}
+
+#inputJogo{
+  padding: 0.7rem 0rem;
+  height: 3rem;
+  width: 30rem;
+  margin: 5px 50px;
+  border: 2px solid yellow;
+  background: transparent;
+  clear: both;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+
+  @media screen and (max-width: break-extra-small) {
+    width: 17rem;
+  }
+}
+
+.name {
+  width: 50rem;
+  height: 10rem;
+  position: relative;
+  background-color: yellow;
+  padding: 0.875rem;
+  text-transform: uppercase;
+  font-style:  black, 1.25rem, weight-extrabold;
+}
+
+.characteristics {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+
+.sw-button {
+  margin-top: 1.5rem;
+  width: 50rem;
+  border: 2px solid yellow;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  vertical-align: middle;
+
+  @media screen and (max-width: break-extra-small) {
+    width: 17rem;
+  }
+}
+
+.sw-button--rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.sw-button--rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.sw-button--rectangle-out:hover,
+.sw-button--rectangle-out:active {
+  color: white;
+}
+
+.sw-button--rectangle-out:hover:before,
+.sw-button--rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.buttonSubmit {
+  margin-top: 1.5rem;
+  width: 15rem;
+  border: 1px solid yellow;
+  background: yellow;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  @media screen and (max-width: break-extra-small) {
+    width: 17rem;
+  }
+}
+
+.buttonSubmit--rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: red;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.buttonSubmit--rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
